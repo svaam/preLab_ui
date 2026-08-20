@@ -1,184 +1,230 @@
 {
-  "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+  "site": {
+    "name": "Lab Restock",
+    "shortName": "LabRestock",
+    "tagline": "Laboratory equipment & consumables, delivered direct",
+    "placeholderNotice": "Placeholder content — replace with the company's chosen brand name, real contact details and products.",
+    "phone": "+91 98765 43210",
+    "email": "sales@labrestock.example.com",
+    "address": "12 Innovation Park, Whitefield, Bengaluru 560066, India",
+    "hours": "Mon–Sat: 9:00 AM – 7:00 PM IST",
+    "socials": {
+      "linkedin": "#",
+      "twitter": "#",
+      "facebook": "#"
+    },
+    "quoteEmail": "sales@labrestock.example.com"
   },
-  "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+  "hero": {
+    "eyebrow": "B2B Laboratory Supplies",
+    "headline": "One point of contact for everything your lab needs",
+    "subhead": "Lab Restock supplies plasticware, glassware, reagents, filtration products and safety PPE to labs, research institutes, hospitals and colleges — delivered direct, on contract-backed terms.",
+    "bullets": [
+      "Direct-to-lab delivery, no middlemen delays",
+      "Multi-supplier sourcing under one roof",
+      "Contract-backed, reliable supply chain",
+      "Competitive pricing via supplier partnerships",
+      "Fast quotation turnaround for bulk orders"
     ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+    "ctaPrimary": {
+      "label": "Request a Quote",
+      "to": "/quote"
+    },
+    "ctaSecondary": {
+      "label": "Browse Products",
+      "to": "/products"
+    }
+  },
+  "trust": [
+    {
+      "icon": "delivery",
+      "title": "Direct-to-Lab Delivery",
+      "text": "Ordered products reach your lab door directly from our partnered suppliers — no middleman delays or transit surprises."
+    },
+    {
+      "icon": "network",
+      "title": "Multi-Supplier Network",
+      "text": "One point of contact across multiple categories, backed by formal supply agreements with trusted manufacturers and distributors."
+    },
+    {
+      "icon": "contract",
+      "title": "Contract-Backed Reliability",
+      "text": "Institutional orders are covered by written supply contracts, giving your procurement team clear terms and consistent pricing."
+    },
+    {
+      "icon": "bolt",
+      "title": "Fast Quote Turnaround",
+      "text": "Bulk and institutional enquiries receive itemised quotations quickly, so purchasing decisions never stall."
+    }
+  ],
+  "categories": [
+    {
+      "slug": "plasticware-glassware",
+      "name": "Plasticware & Glassware",
+      "icon": "flask",
+      "tagline": "Consumables for everyday lab work",
+      "description": "Pipette tips, tubes, beakers, flasks, cylinders, petri dishes and storage solutions in clean, lab-grade plastic and borosilicate glass.",
+      "subcategories": [
+        { "slug": "pipette-tips", "name": "Pipette Tips", "description": "Filtered and unfiltered tips for single and multi-channel pipettors." },
+        { "slug": "tubes", "name": "Centrifuge & Test Tubes", "description": "Conical and round-bottom tubes for centrifugation and routine assays." },
+        { "slug": "beakers-flasks-cylinders", "name": "Beakers, Flasks & Cylinders", "description": "Borosilicate glassware for measurement, mixing and heating." },
+        { "slug": "petri-dishes", "name": "Petri Dishes", "description": "Sterile and non-sterile dishes for culture and plating work." },
+        { "slug": "storage-vials-racks", "name": "Storage Vials & Racks", "description": "Sample vials, cryo tubes and laboratory racks for organised storage." }
+      ]
+    },
+    {
+      "slug": "reagents-chemicals",
+      "name": "Reagents & Chemicals",
+      "icon": "dna",
+      "tagline": "High-purity chemicals for research & diagnostics",
+      "description": "Buffers, cell culture media, stains, dyes, solvents and general lab chemicals sourced with documented purity and batch traceability.",
+      "subcategories": [
+        { "slug": "buffers-solutions", "name": "Buffers & Solutions", "description": "Ready-to-use and concentrated buffer systems for molecular biology." },
+        { "slug": "cell-culture-media", "name": "Cell Culture Media", "description": "Liquid and powdered media for mammalian and microbial culture." },
+        { "slug": "stains-dyes", "name": "Stains & Dyes", "description": "Microscopy and histology stains with consistent lot-to-lot quality." },
+        { "slug": "solvents", "name": "Solvents", "description": "HPLC and reagent-grade solvents in analytical purity grades." },
+        { "slug": "lab-chemicals", "name": "Lab Chemicals (General)", "description": "Common inorganic and organic chemicals for everyday lab use." }
+      ]
+    },
+    {
+      "slug": "filtration-products",
+      "name": "Filtration Products",
+      "icon": "filter",
+      "tagline": "Critical filtration for clean results",
+      "description": "Syringe filters, membrane filters, filter papers and complete filtration assemblies for sample prep and solvent filtration.",
+      "subcategories": [
+        { "slug": "syringe-filters", "name": "Syringe Filters", "description": "Single-use syringe filters in PVDF, PTFE, nylon and PES membranes." },
+        { "slug": "membrane-filters", "name": "Membrane Filters", "description": "Disc and roll membranes for microbiology, sterility and particulate testing." },
+        { "slug": "filter-papers", "name": "Filter Papers", "description": "Qualitative and quantitative grade papers for gravimetric and routine filtration." },
+        { "slug": "filtration-assemblies", "name": "Filtration Assemblies", "description": "Vacuum filtration units, funnels and complete assemblies for scale-up work." }
+      ]
+    },
+    {
+      "slug": "safety-ppe",
+      "name": "Safety & PPE",
+      "icon": "shield",
+      "tagline": "Protection your team can rely on",
+      "description": "Gloves, masks, respirators, lab coats and eye protection compliant with relevant safety standards for laboratory environments.",
+      "subcategories": [
+        { "slug": "gloves", "name": "Gloves", "description": "Nitrile, latex and vinyl examination gloves in multiple sizes." },
+        { "slug": "masks-respirators", "name": "Masks & Respirators", "description": "Surgical masks and particulate respirators for cleanroom and lab use." },
+        { "slug": "lab-coats-aprons", "name": "Lab Coats & Aprons", "description": "Disposable and reusable coats and aprons for wet and dry work." },
+        { "slug": "goggles-face-shields", "name": "Safety Goggles & Face Shields", "description": "Anti-fog goggles and face shields protecting against splashes and debris." }
+      ]
+    }
+  ],
+  "products": [
+    { "id": "tip-10ul-filtered", "name": "Filtered Pipette Tips, 10 µL", "category": "plasticware-glassware", "subcategory": "pipette-tips", "description": "Aerosol-free filtered tips for molecular biology workflows where contamination control is critical.", "packSize": "96 tips / rack", "specs": [["Volume", "10 µL"], ["Filter", "Aerosol barrier"], ["Sterility", "RNase/DNase-free"], ["Fitting", "Universal"]], "featured": true },
+    { "id": "tip-200ul", "name": "Universal Pipette Tips, 200 µL", "category": "plasticware-glassware", "subcategory": "pipette-tips", "description": "Low-retention universal tips for standard and multichannel pipettors.", "packSize": "96 tips / rack", "specs": [["Volume", "200 µL"], ["Material", "Polypropylene"], ["Graduation", "None"], ["Color", "Natural"]], "featured": false },
+    { "id": "tip-1000ul-xl", "name": "XL Pipette Tips, 1000 µL", "category": "plasticware-glassware", "subcategory": "pipette-tips", "description": "Extended-length tips for reaching into deep vessels without cross-contamination.", "packSize": "100 tips / rack", "specs": [["Volume", "1000 µL"], ["Length", "Extended"], ["Sterility", "Sterile"], ["Fitting", "Universal"]], "featured": false },
+    { "id": "tube-15ml-conical", "name": "Centrifuge Tube, 15 mL Conical", "category": "plasticware-glassware", "subcategory": "tubes", "description": "Leak-proof conical tubes with printed graduation for sample centrifugation and storage.", "packSize": "50 tubes / pack", "specs": [["Capacity", "15 mL"], ["Gradient", "Printed"], ["Cap", "Screw, leak-proof"], ["Max RCF", "12,000 xg"]], "featured": true },
+    { "id": "tube-50ml-conical", "name": "Centrifuge Tube, 50 mL Conical", "category": "plasticware-glassware", "subcategory": "tubes", "description": "Large-capacity conical tubes with wide-mouth caps for easy pipetting.", "packSize": "25 tubes / pack", "specs": [["Capacity", "50 mL"], ["Material", "PP"], ["Cap", "HDPE screw"], ["Max RCF", "9,500 xg"]], "featured": false },
+    { "id": "tube-5ml-roundbottom", "name": "Round-Bottom Test Tube, 5 mL", "category": "plasticware-glassware", "subcategory": "tubes", "description": "General-purpose round-bottom tubes for mixing and small-scale reactions.", "packSize": "500 tubes / pack", "specs": [["Capacity", "5 mL"], ["Material", "Polystyrene"], ["Sterility", "Non-sterile"], ["Shape", "Round bottom"]], "featured": false },
+    { "id": "beaker-250ml", "name": "Borosilicate Beaker, 250 mL", "category": "plasticware-glassware", "subcategory": "beakers-flasks-cylinders", "description": "Low-form beaker with spout, autoclavable and chemical-resistant borosilicate glass.", "packSize": "1 pc", "specs": [["Capacity", "250 mL"], ["Material", "Borosilicate 3.3"], ["Shape", "Low form"], ["Autoclavable", "Yes"]], "featured": false },
+    { "id": "flask-500ml-ermy", "name": "Erlenmeyer Flask, 500 mL", "category": "plasticware-glassware", "subcategory": "beakers-flasks-cylinders", "description": "Narrow-neck conical flask with graduation for culturing and titration.", "packSize": "1 pc", "specs": [["Capacity", "500 mL"], ["Neck", "Narrow"], ["Graduation", "Printed"], ["Material", "Borosilicate"]], "featured": false },
+    { "id": "cylinder-100ml", "name": "Measuring Cylinder, 100 mL", "category": "plasticware-glassware", "subcategory": "beakers-flasks-cylinders", "description": "Graduated cylinder with sturdy hexagonal base for accurate volume measurement.", "packSize": "1 pc", "specs": [["Capacity", "100 mL"], ["Graduation", "1 mL"], ["Base", "Hexagonal"], ["Material", "Borosilicate"]], "featured": false },
+    { "id": "petri-90mm-sterile", "name": "Petri Dish, 90 mm, Sterile", "category": "plasticware-glassware", "subcategory": "petri-dishes", "description": "Vented sterile dishes for microbial culture work in laminar flow environments.", "packSize": "500 dishes / case", "specs": [["Diameter", "90 mm"], ["Ventilation", "3 vents"], ["Sterility", "Sterile"], ["Material", "Polystyrene"]], "featured": true },
+    { "id": "petri-60mm", "name": "Petri Dish, 60 mm", "category": "plasticware-glassware", "subcategory": "petri-dishes", "description": "Compact dishes for small-volume plating and media storage.", "packSize": "500 dishes / case", "specs": [["Diameter", "60 mm"], ["Sterility", "Sterile"], ["Stacking", "Yes"], ["Material", "PS"]], "featured": false },
+    { "id": "petri-150mm", "name": "Petri Dish, 150 mm", "category": "plasticware-glassware", "subcategory": "petri-dishes", "description": "Large-diameter dishes for big plates and antibiotic assay work.", "packSize": "240 dishes / case", "specs": [["Diameter", "150 mm"], ["Sterility", "Sterile"], ["Material", "Polystyrene"], ["Ventilation", "Yes"]], "featured": false },
+    { "id": "vial-2ml-cryo", "name": "Cryogenic Vial, 2 mL", "category": "plasticware-glassware", "subcategory": "storage-vials-racks", "description": "Externally-threaded cryo vials rated for ultra-low temperature storage.", "packSize": "500 vials / pack", "specs": [["Capacity", "2 mL"], ["Temperature", "-196 °C"], ["Thread", "External"], ["Sealing", "Silicone gasket"]], "featured": false },
+    { "id": "vial-1.5ml-micro", "name": "Microcentrifuge Vial, 1.5 mL", "category": "plasticware-glassware", "subcategory": "storage-vials-racks", "description": "Snap-cap micro tubes for routine sample handling and PCR setup.", "packSize": "1000 tubes / pack", "specs": [["Capacity", "1.5 mL"], ["Cap", "Attached snap"], ["Sterility", "DNase-free"], ["Max RCF", "20,000 xg"]], "featured": true },
+    { "id": "rack-50ml-24", "name": "Tube Rack, 50 mL, 24-Place", "category": "plasticware-glassware", "subcategory": "storage-vials-racks", "description": "Autoclavable polypropylene rack for organising 50 mL tubes on the bench.", "packSize": "1 rack", "specs": [["Positions", "24"], ["Size", "50 mL"], ["Material", "Polypropylene"], ["Autoclavable", "Yes"]], "featured": false },
+    { "id": "buffer-pbs-10x", "name": "PBS Buffer, 10X Concentrate", "category": "reagents-chemicals", "subcategory": "buffers-solutions", "description": "Phosphate-buffered saline concentrate for cell washing and dilutions.", "packSize": "1 L bottle", "specs": [["Format", "10X liquid"], ["Volume", "1 L"], ["pH", "7.4"], ["Sterile", "Filtered"]], "featured": false },
+    { "id": "buffer-tris-hcl", "name": "Tris-HCl Buffer, 1 M, pH 8.0", "category": "reagents-chemicals", "subcategory": "buffers-solutions", "description": "Molecular biology grade Tris buffer for nucleic acid work.", "packSize": "500 mL bottle", "specs": [["Molarity", "1 M"], ["pH", "8.0"], ["Grade", "Molecular biology"], ["Sterile", "Filtered"]], "featured": false },
+    { "id": "buffer-te-low-edta", "name": "TE Buffer, pH 8.0", "category": "reagents-chemicals", "subcategory": "buffers-solutions", "description": "Ready-to-use TE buffer for resuspending and storing nucleic acids.", "packSize": "250 mL bottle", "specs": [["Composition", "10 mM Tris, 1 mM EDTA"], ["pH", "8.0"], ["Sterility", "Filtered"], ["Grade", "Molecular biology"]], "featured": true },
+    { "id": "media-dmem-highglucose", "name": "DMEM, High Glucose", "category": "reagents-chemicals", "subcategory": "cell-culture-media", "description": "High-glucose Dulbecco's Modified Eagle Medium with L-glutamine and phenol red.", "packSize": "500 mL bottle", "specs": [["Glucose", "4.5 g/L"], ["L-Glutamine", "Included"], ["Phenol red", "Yes"], ["Storage", "2–8 °C"]], "featured": true },
+    { "id": "media-rpmi1640", "name": "RPMI 1640 Medium", "category": "reagents-chemicals", "subcategory": "cell-culture-media", "description": "RPMI 1640 with L-glutamine for suspension and adherent cell culture.", "packSize": "500 mL bottle", "specs": [["Format", "Liquid"], ["L-Glutamine", "Included"], ["Sodium bicarbonate", "Included"], ["Storage", "2–8 °C"]], "featured": false },
+    { "id": "media-lb-agar", "name": "LB Agar Powder", "category": "reagents-chemicals", "subcategory": "cell-culture-media", "description": "Lennox LB agar powder for microbial culture plates.", "packSize": "500 g jar", "specs": [["Form", "Powder"], ["Yield", "~20 L"], ["Composition", "Tryptone, yeast extract, NaCl, agar"], ["Autoclavable", "Yes"]], "featured": false },
+    { "id": "stain-crystal-violet", "name": "Crystal Violet, 1% Solution", "category": "reagents-chemicals", "subcategory": "stains-dyes", "description": "Aqueous crystal violet for Gram staining and colony counting.", "packSize": "100 mL bottle", "specs": [["Concentration", "1% w/v"], ["Use", "Gram stain"], ["Solvent", "Aqueous"], ["Grade", "Certified"]], "featured": false },
+    { "id": "stain-ethidium", "name": "Ethidium Bromide, 10 mg/mL", "category": "reagents-chemicals", "subcategory": "stains-dyes", "description": "Nucleic acid stain for agarose gel visualisation. Handle with care.", "packSize": "10 mL bottle", "specs": [["Concentration", "10 mg/mL"], ["Use", "DNA gel stain"], ["Storage", "Room temp, dark"], ["Hazard", "Mutagen — PPE required"]], "featured": false },
+    { "id": "stain-giemsa", "name": "Giemsa Stain, Ready-to-Use", "category": "reagents-chemicals", "subcategory": "stains-dyes", "description": "Ready-to-use Giemsa for haematology and cytology smears.", "packSize": "500 mL bottle", "specs": [["Format", "Ready to use"], ["Use", "Blood smears"], ["Grade", "Certified"], ["Storage", "Room temp"]], "featured": false },
+    { "id": "solvent-methanol-hplc", "name": "Methanol, HPLC Grade", "category": "reagents-chemicals", "subcategory": "solvents", "description": "HPLC-grade methanol with low UV absorbance for chromatography.", "packSize": "4 L bottle", "specs": [["Grade", "HPLC"], ["Purity", ">= 99.9%"], ["UV cutoff", "<= 205 nm"], ["Packaging", "4 L"]], "featured": false },
+    { "id": "solvent-ethanol-abs", "name": "Absolute Ethanol, 99.9%", "category": "reagents-chemicals", "subcategory": "solvents", "description": "Anhydrous ethanol for precipitation, sterilisation and general use.", "packSize": "2.5 L bottle", "specs": [["Purity", "99.9%"], ["Grade", "Reagent"], ["Water", "< 0.1%"], ["Packaging", "2.5 L"]], "featured": false },
+    { "id": "solvent-acetonitrile", "name": "Acetonitrile, HPLC Grade", "category": "reagents-chemicals", "subcategory": "solvents", "description": "High-purity acetonitrile for reverse-phase chromatography.", "packSize": "4 L bottle", "specs": [["Grade", "HPLC"], ["Purity", ">= 99.9%"], ["Water", "< 0.05%"], ["Packaging", "4 L"]], "featured": false },
+    { "id": "chem-sodium-chloride", "name": "Sodium Chloride, ACS Grade", "category": "reagents-chemicals", "subcategory": "lab-chemicals", "description": "Granular sodium chloride for buffer preparation and general lab use.", "packSize": "1 kg bottle", "specs": [["Grade", "ACS"], ["Purity", ">= 99.0%"], ["Form", "Granular"], ["Packaging", "1 kg"]], "featured": false },
+    { "id": "chem-hcl-37", "name": "Hydrochloric Acid, 37%", "category": "reagents-chemicals", "subcategory": "lab-chemicals", "description": "Concentrated hydrochloric acid for pH adjustment and digestion.", "packSize": "2.5 L bottle", "specs": [["Concentration", "37%"], ["Grade", "Reagent"], ["Density", "1.19 g/mL"], ["Hazard", "Corrosive"]], "featured": false },
+    { "id": "chem-agarose", "name": "Agarose, Molecular Biology Grade", "category": "reagents-chemicals", "subcategory": "lab-chemicals", "description": "High-resolution agarose powder for gel electrophoresis.", "packSize": "100 g bottle", "specs": [["Grade", "Molecular biology"], ["EEO", "<= 0.13"], ["Melting point", "87 °C"], ["Packaging", "100 g"]], "featured": true },
+    { "id": "sfilter-pvdf-13mm", "name": "Syringe Filter, 0.22 µm PVDF, 13 mm", "category": "filtration-products", "subcategory": "syringe-filters", "description": "Sterile PVDF syringe filter for aqueous and protein-containing samples.", "packSize": "100 filters / pack", "specs": [["Membrane", "PVDF"], ["Pore size", "0.22 µm"], ["Diameter", "13 mm"], ["Sterile", "Yes"]], "featured": true },
+    { "id": "sfilter-ptfe-25mm", "name": "Syringe Filter, 0.45 µm PTFE, 25 mm", "category": "filtration-products", "subcategory": "syringe-filters", "description": "Solvent-safe PTFE filter for aggressive organic solvents and HPLC sample prep.", "packSize": "100 filters / pack", "specs": [["Membrane", "PTFE"], ["Pore size", "0.45 µm"], ["Diameter", "25 mm"], ["Housing", "PP"]], "featured": false },
+    { "id": "sfilter-nylon-13mm", "name": "Syringe Filter, 0.2 µm Nylon, 13 mm", "category": "filtration-products", "subcategory": "syringe-filters", "description": "Hydrophilic nylon filter for general aqueous filtration and HPLC prep.", "packSize": "200 filters / pack", "specs": [["Membrane", "Nylon"], ["Pore size", "0.2 µm"], ["Diameter", "13 mm"], ["Chemical compat.", "Broad"]], "featured": false },
+    { "id": "membrane-nc-0.45", "name": "Nitrocellulose Membrane, 0.45 µm, 47 mm", "category": "filtration-products", "subcategory": "membrane-filters", "description": "Gridded nitrocellulose membranes for microbiology and particulate analysis.", "packSize": "100 discs / box", "specs": [["Material", "Nitrocellulose"], ["Pore size", "0.45 µm"], ["Diameter", "47 mm"], ["Sterility", "Sterile"]], "featured": false },
+    { "id": "membrane-pes-0.22", "name": "PES Membrane, 0.22 µm, 47 mm", "category": "filtration-products", "subcategory": "membrane-filters", "description": "Low-binding PES membrane discs for tissue culture media filtration.", "packSize": "100 discs / box", "specs": [["Material", "PES"], ["Pore size", "0.22 µm"], ["Diameter", "47 mm"], ["Protein binding", "Low"]], "featured": false },
+    { "id": "membrane-cellulose-0.45", "name": "Cellulose Acetate Membrane, 0.45 µm", "category": "filtration-products", "subcategory": "membrane-filters", "description": "Cellulose acetate discs with low extractables for aqueous solutions.", "packSize": "100 discs / box", "specs": [["Material", "Cellulose acetate"], ["Pore size", "0.45 µm"], ["Diameter", "47 mm"], ["Extractables", "Low"]], "featured": false },
+    { "id": "fpaper-q2-90mm", "name": "Qualitative Filter Paper, Grade 2, 90 mm", "category": "filtration-products", "subcategory": "filter-papers", "description": "Medium-fast qualitative paper for routine clarification and sample prep.", "packSize": "500 sheets / pack", "specs": [["Grade", "2 (Qualitative)"], ["Diameter", "90 mm"], ["Particle retention", "8 µm"], ["Filtration speed", "Medium"]], "featured": false },
+    { "id": "fpaper-q41-ashless", "name": "Ashless Filter Paper, Grade 41, 110 mm", "category": "filtration-products", "subcategory": "filter-papers", "description": "Quantitative ashless paper for gravimetric analysis.", "packSize": "100 sheets / pack", "specs": [["Grade", "41 (Quantitative)"], ["Diameter", "110 mm"], ["Ash content", "<= 0.007%"], ["Retention", "20 µm"]], "featured": false },
+    { "id": "fpaper-whatman-1", "name": "Qualitative Filter Paper, Grade 1, 125 mm", "category": "filtration-products", "subcategory": "filter-papers", "description": "The classic general-purpose filter paper for routine laboratory filtration.", "packSize": "100 sheets / pack", "specs": [["Grade", "1 (Qualitative)"], ["Diameter", "125 mm"], ["Particle retention", "11 µm"], ["Filtration speed", "Medium"]], "featured": false },
+    { "id": "funit-500ml-pes", "name": "Vacuum Filtration Unit, 500 mL", "category": "filtration-products", "subcategory": "filtration-assemblies", "description": "Complete pre-sterilised PES vacuum filter unit for sterile filtration of media and buffers.", "packSize": "12 units / case", "specs": [["Capacity", "500 mL"], ["Membrane", "PES"], ["Pore size", "0.22 µm"], ["Sterility", "Pre-sterilised"]], "featured": true },
+    { "id": "funit-buchner", "name": "Buchner Funnel, Porcelain, 90 mm", "category": "filtration-products", "subcategory": "filtration-assemblies", "description": "Glazed porcelain Buchner funnel for vacuum filtration of larger volumes.", "packSize": "1 pc", "specs": [["Diameter", "90 mm"], ["Material", "Porcelain"], ["Application", "Vacuum filtration"], ["Autoclavable", "Yes"]], "featured": false },
+    { "id": "funit-manifold", "name": "12-Port Vacuum Manifold", "category": "filtration-products", "subcategory": "filtration-assemblies", "description": "Aluminium manifold for parallel processing of multiple filtration samples.", "packSize": "1 unit", "specs": [["Ports", "12"], ["Material", "Anodised aluminium"], ["Compatibility", "3 mm tubes"], ["Application", "Parallel filtration"]], "featured": false },
+    { "id": "glove-nitrile-m", "name": "Nitrile Exam Gloves, Medium", "category": "safety-ppe", "subcategory": "gloves", "description": "Powder-free nitrile gloves with textured fingertips for wet and dry lab tasks.", "packSize": "100 gloves / box", "specs": [["Material", "Nitrile"], ["Size", "Medium"], ["Powder", "Powder-free"], ["Rating", "EN 455, ASTM D6319"]], "featured": true },
+    { "id": "glove-nitrile-l", "name": "Nitrile Exam Gloves, Large", "category": "safety-ppe", "subcategory": "gloves", "description": "Powder-free nitrile gloves in large size for everyday lab handling.", "packSize": "100 gloves / box", "specs": [["Material", "Nitrile"], ["Size", "Large"], ["Powder", "Powder-free"], ["Ambidextrous", "Yes"]], "featured": false },
+    { "id": "glove-latex-s", "name": "Latex Exam Gloves, Small", "category": "safety-ppe", "subcategory": "gloves", "description": "Natural latex gloves offering high tactile sensitivity for fine work.", "packSize": "100 gloves / box", "specs": [["Material", "Natural latex"], ["Size", "Small"], ["Powder", "Powder-free"], ["Rating", "EN 455"]], "featured": false },
+    { "id": "mask-surgical-3ply", "name": "Surgical Mask, 3-Ply", "category": "safety-ppe", "subcategory": "masks-respirators", "description": "Disposable 3-ply surgical masks with ear loops and fluid resistance.", "packSize": "50 masks / box", "specs": [["Layers", "3-ply"], ["Fluid resistance", "Yes"], ["Fastening", "Ear loops"], ["Standard", "EN 14683 Type II"]], "featured": false },
+    { "id": "respirator-n95", "name": "N95 Particulate Respirator", "category": "safety-ppe", "subcategory": "masks-respirators", "description": "Cup-style N95 respirator for protection against airborne particulates.", "packSize": "20 masks / box", "specs": [["Rating", "N95"], ["Filtration", ">= 95%"], ["Fastening", "Head straps"], ["Standard", "NIOSH N95"]], "featured": false },
+    { "id": "respirator-ffp2", "name": "FFP2 Valved Respirator", "category": "safety-ppe", "subcategory": "masks-respirators", "description": "Valved FFP2 respirator with lower breathing resistance for longer wear.", "packSize": "20 masks / box", "specs": [["Rating", "FFP2 NR"], ["Valve", "Exhale valve"], ["Filtration", ">= 94%"], ["Standard", "EN 149"]], "featured": false },
+    { "id": "coat-disposable", "name": "Disposable Lab Coat, White", "category": "safety-ppe", "subcategory": "lab-coats-aprons", "description": "Lightweight non-woven disposable lab coat for visitor and cleanroom use.", "packSize": "10 coats / pack", "specs": [["Material", "Non-woven PP"], ["Fastening", "Snap buttons"], ["Color", "White"], ["Cuffs", "Elastic"]], "featured": false },
+    { "id": "coat-reusable-cotton", "name": "Reusable Cotton Lab Coat, White", "category": "safety-ppe", "subcategory": "lab-coats-aprons", "description": "Durable cotton-blend lab coat with front pockets for daily lab wear.", "packSize": "1 coat", "specs": [["Material", "Cotton blend"], ["Length", "Knee length"], ["Pockets", "2 front"], ["Sizes", "S–XXL"]], "featured": false },
+    { "id": "apron-pvc", "name": "PVC Chemical Apron", "category": "safety-ppe", "subcategory": "lab-coats-aprons", "description": "Heavy-duty PVC apron protecting against chemical splashes during handling.", "packSize": "1 apron", "specs": [["Material", "PVC"], ["Length", "Full torso"], ["Straps", "Adjustable"], ["Resistance", "Acid & alkali"]], "featured": false },
+    { "id": "goggles-anti-fog", "name": "Anti-Fog Safety Goggles", "category": "safety-ppe", "subcategory": "goggles-face-shields", "description": "Indirect-vent goggles with anti-fog coating and UV protection.", "packSize": "1 pc", "specs": [["Lens", "Anti-fog PC"], ["Ventilation", "Indirect"], ["UV", "UV400"], ["Standard", "EN 166"]], "featured": false },
+    { "id": "goggles-over-glasses", "name": "Over-Glasses Safety Goggles", "category": "safety-ppe", "subcategory": "goggles-face-shields", "description": "Wide-vision goggles designed to fit comfortably over prescription eyewear.", "packSize": "1 pc", "specs": [["Design", "Over glasses"], ["Lens", "Clear PC"], ["Coating", "Anti-scratch"], ["Standard", "EN 166"]], "featured": false },
+    { "id": "faceshield-full", "name": "Full-Face Splash Shield", "category": "safety-ppe", "subcategory": "goggles-face-shields", "description": "Adjustable headband face shield for splash and impact protection.", "packSize": "1 pc", "specs": [["Material", "PET visor"], ["Headband", "Adjustable"], ["Protection", "Splash & impact"], ["Replacement visor", "Available"]], "featured": false }
+  ],
+  "suppliers": [
+    { "name": "NovaChem Supplies", "area": "Reagents & chemicals", "description": "High-purity reagents and analytical solvents with documented traceability." },
+    { "name": "PureFlow Membranes", "area": "Filtration", "description": "Membrane filters and syringe filters for clinical and research use." },
+    { "name": "GlassWorks Scientific", "area": "Glassware", "description": "Borosilicate glassware manufactured to volumetric standards." },
+    { "name": "SafeGuard PPE", "area": "Safety products", "description": "Certified gloves, masks and protective equipment for lab environments." },
+    { "name": "MicroBio Reagents", "area": "Molecular biology", "description": "Buffers, media and molecular biology reagents in cGMP facilities." },
+    { "name": "PolyLab Plastics", "area": "Plasticware", "description": "Lab-grade plastic consumables produced in cleanroom facilities." }
+  ],
+  "founders": [
+    {
+      "name": "Aditya",
+      "role": "Co-founder · Operations",
+      "bio": "Oversees delivery logistics and order fulfilment to keep lab supplies moving on schedule."
+    },
+    {
+      "name": "Vighnesha",
+      "role": "Co-founder · Supplier Relations",
+      "bio": "Builds and manages the contract network of trusted suppliers and manufacturers."
+    },
+    {
+      "name": "Arth",
+      "role": "Co-founder · Sales & Procurement",
+      "bio": "Leads institutional sales, quotation turnaround and bulk procurement agreements."
+    },
+    {
+      "name": "Shivam",
+      "role": "Co-founder · Tech & Logistics",
+      "bio": "Drives the technology and inventory systems that keep the supply chain transparent."
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Quotations came back within hours and the consignment reached our lab on the promised day. Exactly the reliability our procurement team needed.",
+      "source": "Procurement Officer, University Research Institute"
+    },
+    {
+      "text": "Having one supplier for glassware, media and PPE has cut our vendor management time in half.",
+      "source": "Lab Manager, Private Diagnostic Lab"
+    },
+    {
+      "text": "Contract-backed pricing gave us predictable costs for annual budgeting across four departments.",
+      "source": "Head of Stores, Medical College"
+    }
+  ],
+  "about": {
+    "story": [
+      "Lab Restock was founded by four colleagues who saw the same problem in every lab they worked with: procurement was fragmented, deliveries were unreliable, and small orders got deprioritised. Budgets were spent chasing vendors instead of science.",
+      "We set up Lab Restock to be the single point of contact for laboratory consumables and equipment — sourcing from a network of contracted suppliers so labs, institutes, hospitals and colleges get what they need, when they need it, at consistent pricing."
+    ],
+    "mission": "To make laboratory procurement simple, reliable and transparent for research, healthcare and education institutions.",
+    "vision": "A world where no lab loses time to supply chain friction — where every order is one contact away, contract-backed and delivered direct.",
+    "whyDirect": [
+      "Shortened lead times through direct dispatch from partner warehouses",
+      "Fewer damaged or delayed consignments from consolidated shipping",
+      "Clearer pricing via written supply contracts, not one-off quotes",
+      "A dedicated coordinator for institutional and bulk accounts"
     ]
-  },
-  "Gallery": [
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
-    }
-  ],
-  "Services": [
-    {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
-  ],
-  "Testimonials": [
-    {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    }
-  ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
-  "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
-  },
-  "Features": [
-    {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    }
-  ]
+  }
 }

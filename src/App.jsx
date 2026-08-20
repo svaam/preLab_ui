@@ -1,41 +1,48 @@
-import React, { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
-import JsonData from "./data/data.json";
-import SmoothScroll from "smooth-scroll";
-import "./App.css";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Layout } from "./components/layout/Layout";
+import { QuoteProvider } from "./context/QuoteContext";
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
+import { ProductsPage } from "./pages/ProductsPage";
+import { CategoryPage } from "./pages/CategoryPage";
+import { ProductDetailPage } from "./pages/ProductDetailPage";
+import { SuppliersPage } from "./pages/SuppliersPage";
+import { ContactPage } from "./pages/ContactPage";
+import { QuotePage } from "./pages/QuotePage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
-
-const App = () => {
-  const [landingPageData, setLandingPageData] = useState({});
+function ScrollToTop() {
+  const { pathname } = useLocation();
   useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
+export default function App() {
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+    <QuoteProvider>
+      <HashRouter>
+        <ScrollToTop />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/products/:categorySlug" element={<CategoryPage />} />
+            <Route
+              path="/products/:categorySlug/:subSlug"
+              element={<CategoryPage />}
+            />
+            <Route path="/product/:productId" element={<ProductDetailPage />} />
+            <Route path="/suppliers" element={<SuppliersPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/quote" element={<QuotePage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Layout>
+      </HashRouter>
+    </QuoteProvider>
   );
-};
-
-export default App;
+}
