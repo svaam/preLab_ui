@@ -16,19 +16,8 @@ export function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <Link to="/" className="footer__brand">
-              <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
-                <rect width="64" height="64" rx="12" fill="#38b26d" />
-                <path
-                  d="M24 14v18a8 8 0 0 0 16 0V14"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                />
-                <path d="M18 46h28" stroke="#fff" strokeWidth="5" strokeLinecap="round" />
-              </svg>
-              {site.name}
+            <Link to="/" className="footer__brand footer__brand--card" aria-label={`${site.name} home`}>
+              <img src="/logo.svg" alt={site.name} className="footer__logo" width="170" height="34" />
             </Link>
             <p className="footer__text">
               {site.tagline}. A vendor/distributor delivering directly to
