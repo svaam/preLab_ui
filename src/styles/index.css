@@ -79,6 +79,16 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
+.footer__contact a {
+  color: #b9cfdd;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  color: white;
+}
+
+
 img,
 svg {
   max-width: 100%;
@@ -953,15 +963,19 @@ button {
   font-weight: 700;
 }
 
-.footer__brand {
-  color: var(--color-white);
-  font-size: 1.25rem;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
+.footer__brand--card { 
+  background:#ffffff; 
+  padding:10px 14px; 
+  border-radius:10px; 
+  display:inline-flex; 
+  align-items:center; 
 }
+
+.footer__brand--card .footer__logo { 
+  height:28px; 
+  width:auto; 
+  display:block; 
+} /* already 28px, keep */
 
 .footer__text {
   font-size: 0.9rem;
@@ -1254,13 +1268,13 @@ button {
 /* ----- Team / founders ----- */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
 @media (max-width: 900px) {
   .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

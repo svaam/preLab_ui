@@ -16,8 +16,8 @@ export function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <Link to="/" className="footer__brand">
-              <img src="/logo.svg" alt={site.name} className="footer__logo" width="140" height="28" />
+            <Link to="/" className="footer__brand footer__brand--card" aria-label={`${site.name} home`}>
+              <img src="/logo.svg" alt={site.name} className="footer__logo" width="170" height="34" />
             </Link>
             <p className="footer__text">
               {site.tagline}. A vendor/distributor delivering directly to
