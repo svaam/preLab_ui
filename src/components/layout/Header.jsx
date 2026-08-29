@@ -25,23 +25,7 @@ export function Header() {
     <header className="site-header">
       <div className="container header__inner">
         <Link to="/" className="brand" aria-label={`${site.name} home`}>
-          <svg
-            className="brand__mark"
-            viewBox="0 0 64 64"
-            aria-hidden="true"
-          >
-            <rect width="64" height="64" rx="12" fill="#0d3b66" />
-            <path
-              d="M24 14v18a8 8 0 0 0 16 0V14"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="5"
-              strokeLinecap="round"
-            />
-            <path d="M18 46h28" stroke="#38b26d" strokeWidth="5" strokeLinecap="round" />
-            <circle cx="32" cy="46" r="3" fill="#fff" />
-          </svg>
-          <span>{site.name}</span>
+          <img src="/logo.svg" alt={site.name} className="brand__logo" width="170" height="34" />
         </Link>
 
         <nav id="site-nav" className={`nav${open ? " nav--open" : ""}`} aria-label="Main">

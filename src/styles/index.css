@@ -303,9 +303,16 @@ button {
   color: var(--color-primary);
 }
 
-.brand__mark {
-  width: 34px;
+.brand__logo {
   height: 34px;
+  width: auto;
+  display: block;
+}
+
+.footer__logo {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .brand:hover {
